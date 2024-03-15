@@ -1,5 +1,16 @@
 import type { Config } from "tailwindcss";
 
+function withOpacity(variableName:string) {
+  return ({ opacityValue }:{opacityValue:any}) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
+
+
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
