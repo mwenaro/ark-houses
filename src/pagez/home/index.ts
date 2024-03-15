@@ -1,0 +1,5 @@
+export {default as HeroSection} from './HeroSection'
+export {default as ContactSection} from './ContactSection'
+export {default as PopularPlaces} from './PopularPlaces'
+export {default as PropertyForSale} from './PropertyForSale'
+export {default as PropertyForRent} from './PropertyForRent'
